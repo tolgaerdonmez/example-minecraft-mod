@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "xxx",
+    "xex",
+    "xxx"
+  ],
+  "key": {
+    "x": {
+      "item": "tutorialmod:ruby"
+    },
+    "e": {
+      "item": "minecraft:emerald"
+    }
+  },
+  "result": {
+    "item": "tutorialmod:ruby_block",
+    "count": 1
+  }
+}
