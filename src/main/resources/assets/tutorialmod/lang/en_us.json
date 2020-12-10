@@ -1,6 +1,7 @@
 {
-  "item.tutorialmod.ruby": "Ruby",
-  "block.tutorialmod.ruby_block": "Block Of Ruby",
   "itemGroup.tutorialTab": "Tutorial",
-  "item.tutorialmod.ruby_sword": "Ruby Sword"
+  "item.tutorialmod.ruby": "Ruby",
+  "item.tutorialmod.ruby_sword": "Ruby Sword",
+  "block.tutorialmod.ruby_block": "Block Of Ruby",
+  "block.tutorialmod.ruby_ore": "Ore of Ruby"
 }

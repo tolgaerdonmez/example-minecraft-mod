@@ -3,6 +3,7 @@ package com.example.tutorialmod.util;
 import com.example.tutorialmod.TutorialMod;
 import com.example.tutorialmod.blocks.BlockItemBase;
 import com.example.tutorialmod.blocks.RubyBlock;
+import com.example.tutorialmod.blocks.RubyOre;
 import com.example.tutorialmod.items.ItemBase;
 import com.example.tutorialmod.tools.ModItemTier;
 import net.minecraft.block.Block;
@@ -39,8 +40,11 @@ public class RegistryHandler {
 
     // Blocks
     public static final RegistryObject<Block> RUBY_BLOCK = BLOCKS.register("ruby_block", RubyBlock::new);
+    public static final RegistryObject<Block> RUBY_ORE = BLOCKS.register("ruby_ore", RubyOre::new);
 
     // Block Items
     public static final RegistryObject<Item> RUBY_BLOCK_ITEM = ITEMS.register("ruby_block", () -> new BlockItemBase(RUBY_BLOCK.get()));
+    public static final RegistryObject<Item> RUBY_ORE_ITEM = ITEMS.register("ruby_ore", () -> new BlockItemBase(RUBY_ORE.get()));
+
 
 }
