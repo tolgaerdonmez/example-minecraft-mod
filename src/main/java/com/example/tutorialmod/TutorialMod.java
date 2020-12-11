@@ -1,6 +1,7 @@
 package com.example.tutorialmod;
 
-import com.example.tutorialmod.util.RegistryHandler;
+import com.example.tutorialmod.init.ModBlocks;
+import com.example.tutorialmod.init.ModItems;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.MinecraftForge;
@@ -13,7 +14,7 @@ import org.apache.logging.log4j.Logger;
 
 @Mod("tutorialmod")
 public class TutorialMod {
-    
+
     public static final Logger LOGGER = LogManager.getLogger();
     public static final String MOD_ID = "tutorialmod";
 
@@ -21,7 +22,8 @@ public class TutorialMod {
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::doClientStuff);
 
-        RegistryHandler.init();
+        ModBlocks.BLOCKS.register(FMLJavaModLoadingContext.get().getModEventBus());
+        ModItems.ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());
 
         MinecraftForge.EVENT_BUS.register(this);
     }
@@ -35,7 +37,7 @@ public class TutorialMod {
     public static final ItemGroup TAB = new ItemGroup("tutorialTab") {
         @Override
         public ItemStack createIcon() {
-            return new ItemStack(RegistryHandler.RUBY.get());
+            return new ItemStack(ModItems.RUBY.get());
         }
     };
 

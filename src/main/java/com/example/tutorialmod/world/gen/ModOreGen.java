@@ -1,7 +1,7 @@
-package com.example.tutorialmod.word.gen;
+package com.example.tutorialmod.world.gen;
 
 import com.example.tutorialmod.TutorialMod;
-import com.example.tutorialmod.util.RegistryHandler;
+import com.example.tutorialmod.init.ModBlocks;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.pattern.BlockMatcher;
@@ -33,19 +33,19 @@ public class ModOreGen {
                 case NETHER:
                     genOre(biome, 12, 5, 5, 80,
                             OreFeatureConfig.FillerBlockType.NETHERRACK,
-                            RegistryHandler.RUBY_ORE.get().getDefaultState(),
+                            ModBlocks.RUBY_ORE.get().getDefaultState(),
                             4);
                     break;
                 // end generation
                 case THEEND:
                     genOre(biome, 18, 3, 5, 88,
                             END_STONE,
-                            RegistryHandler.RUBY_ORE.get().getDefaultState(),
+                            ModBlocks.RUBY_ORE.get().getDefaultState(),
                             12);
                     break;
                 // world generation
                 default:
-                    genOre(biome, 15, 8, 5, 50, OreFeatureConfig.FillerBlockType.NATURAL_STONE, RegistryHandler.RUBY_ORE.get().getDefaultState(), 6);
+                    genOre(biome, 15, 8, 5, 50, OreFeatureConfig.FillerBlockType.NATURAL_STONE, ModBlocks.RUBY_ORE.get().getDefaultState(), 6);
                     break;
             }
         }

@@ -1,7 +1,7 @@
 package com.example.tutorialmod.events;
 
 import com.example.tutorialmod.TutorialMod;
-import com.example.tutorialmod.util.RegistryHandler;
+import com.example.tutorialmod.init.ModBlocks;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.passive.SheepEntity;
 import net.minecraft.entity.player.PlayerEntity;
@@ -26,7 +26,7 @@ public class ModClientEvents {
         if (player.getHeldItemMainhand().getItem() == Items.STICK) {
             TutorialMod.LOGGER.info("Player tried to jump with a stick");
             World world = player.getEntityWorld();
-            world.setBlockState(player.func_233580_cy_().add(0, -1, 0), RegistryHandler.RUBY_BLOCK.get().getDefaultState());
+            world.setBlockState(player.func_233580_cy_().add(0, -1, 0), ModBlocks.RUBY_BLOCK.get().getDefaultState());
         }
     }
 
