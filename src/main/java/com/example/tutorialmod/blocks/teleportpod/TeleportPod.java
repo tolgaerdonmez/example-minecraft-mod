@@ -19,12 +19,8 @@ import javax.annotation.Nullable;
 
 public class TeleportPod extends Block {
     public TeleportPod() {
-        super(Block.Properties.create(Material.PISTON)
-                .hardnessAndResistance(3.5f, 4.0f)
-                .harvestLevel(3)
-                .harvestTool(ToolType.PICKAXE)
-                .func_235861_h_()
-        );
+        super(Block.Properties.create(Material.PISTON).hardnessAndResistance(3.5f, 4.0f).harvestLevel(3)
+                .harvestTool(ToolType.PICKAXE).setRequiresTool());
     }
 
     private static final DirectionProperty FACING = HorizontalBlock.HORIZONTAL_FACING;

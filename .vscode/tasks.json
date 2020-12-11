@@ -1,0 +1,10 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "purge-dsstore",
+			"command": "find . -name '.DS_Store' -type f -delete ",
+			"type": "shell"
+		}
+	]
+}

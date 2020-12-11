@@ -11,13 +11,8 @@ import net.minecraftforge.common.ToolType;
 
 public class RubyOre extends OreBlock {
     public RubyOre() {
-        super(Block.Properties.create(Material.IRON)
-                .hardnessAndResistance(3.0f, 4.0f)
-                .sound(SoundType.METAL)
-                .harvestLevel(2)
-                .func_235861_h_() // require tool
-                .harvestTool(ToolType.PICKAXE)
-        );
+        super(Block.Properties.create(Material.IRON).hardnessAndResistance(3.0f, 4.0f).sound(SoundType.METAL)
+                .harvestLevel(2).setRequiresTool().harvestTool(ToolType.PICKAXE));
     }
 
     @Override
