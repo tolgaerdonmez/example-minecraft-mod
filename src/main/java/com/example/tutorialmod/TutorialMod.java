@@ -1,7 +1,6 @@
 package com.example.tutorialmod;
 
 import com.example.tutorialmod.util.RegistryHandler;
-import com.example.tutorialmod.word.gen.ModOreGen;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.MinecraftForge;
@@ -14,7 +13,8 @@ import org.apache.logging.log4j.Logger;
 
 @Mod("tutorialmod")
 public class TutorialMod {
-    private static final Logger LOGGER = LogManager.getLogger();
+    
+    public static final Logger LOGGER = LogManager.getLogger();
     public static final String MOD_ID = "tutorialmod";
 
     public TutorialMod() {
@@ -27,7 +27,6 @@ public class TutorialMod {
     }
 
     private void setup(final FMLCommonSetupEvent event) {
-        ModOreGen.registerOre();
     }
 
     private void doClientStuff(final FMLClientSetupEvent event) {

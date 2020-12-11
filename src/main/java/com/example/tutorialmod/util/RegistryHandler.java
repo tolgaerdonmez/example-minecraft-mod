@@ -2,8 +2,10 @@ package com.example.tutorialmod.util;
 
 import com.example.tutorialmod.TutorialMod;
 import com.example.tutorialmod.blocks.BlockItemBase;
+import com.example.tutorialmod.blocks.Oven;
 import com.example.tutorialmod.blocks.RubyBlock;
 import com.example.tutorialmod.blocks.RubyOre;
+import com.example.tutorialmod.blocks.teleportpod.TeleportPod;
 import com.example.tutorialmod.items.ItemBase;
 import com.example.tutorialmod.tools.ModItemTier;
 import net.minecraft.block.Block;
@@ -41,10 +43,14 @@ public class RegistryHandler {
     // Blocks
     public static final RegistryObject<Block> RUBY_BLOCK = BLOCKS.register("ruby_block", RubyBlock::new);
     public static final RegistryObject<Block> RUBY_ORE = BLOCKS.register("ruby_ore", RubyOre::new);
+    public static final RegistryObject<Block> OVEN = BLOCKS.register("oven", Oven::new);
+    public static final RegistryObject<Block> TELEPORT_POD = BLOCKS.register("teleport_pod", TeleportPod::new);
 
     // Block Items
     public static final RegistryObject<Item> RUBY_BLOCK_ITEM = ITEMS.register("ruby_block", () -> new BlockItemBase(RUBY_BLOCK.get()));
     public static final RegistryObject<Item> RUBY_ORE_ITEM = ITEMS.register("ruby_ore", () -> new BlockItemBase(RUBY_ORE.get()));
+    public static final RegistryObject<Item> OVEN_ITEM = ITEMS.register("oven", () -> new BlockItemBase(OVEN.get()));
+    public static final RegistryObject<Item> TELEPORT_POD_ITEM = ITEMS.register("teleport_pod", () -> new BlockItemBase(TELEPORT_POD.get()));
 
 
 }

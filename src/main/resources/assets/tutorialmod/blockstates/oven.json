@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "tutorialmod:block/oven"
+    },
+    "facing=south": {
+      "model": "tutorialmod:block/oven",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "tutorialmod:block/oven",
+      "y": 270
+    },
+    "facing=east": {
+      "model": "tutorialmod:block/oven",
+      "y": 90
+    }
+  }
+}
